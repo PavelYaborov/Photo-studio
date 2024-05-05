@@ -1,0 +1,224 @@
+.footer {
+  background: #202020;
+}
+
+.footer__container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+.footer__logo-block {
+  min-width: 244px;
+}
+
+.footer__logo-text {
+  margin-top: 6.3px;
+  margin-bottom: 9px;
+  font-family: "TTFirsNeue";
+  font-weight: 400;
+  font-size: 14px;
+  color: #e9e9e9;
+}
+
+.footer__quote-block {
+  margin-left: 15.3%;
+}
+
+.footer__quote {
+  margin: 0;
+  max-width: 361px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137%;
+  color: #cacaca;
+}
+
+.footer__social-block {
+  margin-left: 26%;
+}
+
+.footer__social-text {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137%;
+  color: #cacaca;
+}
+
+.footer__socials {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.footer__social-link {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__social-link-1 {
+  background-image: url(../img/svg/ok.svg);
+}
+
+.footer__social-link-2 {
+  background-image: url(../img/svg/vk.svg);
+}
+
+.footer__social-link-1,
+.footer__social-link-2 {
+  transition: filter .3s linear;
+}
+
+.footer__social-link-1:hover,
+.footer__social-link-2:hover{
+  filter: invert(71%) sepia(81%) saturate(4818%) hue-rotate(340deg) brightness(102%) contrast(101%);
+}
+
+.footer__social-link-1:focus,
+.footer__social-link-2:focus{
+  filter: invert(36%) sepia(12%) saturate(5564%) hue-rotate(345deg) brightness(100%) contrast(82%);
+}
+
+.footer__social-link-1:active,
+.footer__social-link-2:active{
+  filter: invert(35%) sepia(100%) saturate(5193%) hue-rotate(17deg) brightness(96%) contrast(94%);
+}
+
+.footer__social-link:not(:last-child) {
+  margin-right: 18px;
+  margin-bottom: 5px;
+}
+
+@media(max-width: 1650px) {
+  .footer-container {
+    padding: 24px 31px 16px 31px;
+  }
+
+  .footer__logo-block {
+    margin-top: 7px;
+  }
+
+  .footer__logo {
+    width: 166px;
+  }
+
+  .footer__logo-text {
+    margin-top: 1.3px;
+    margin-bottom: 0;
+  }
+
+  .footer__quote-block {
+    margin-left: 13.3%;
+  }
+
+  .footer__social-block {
+    min-width: 161px;
+    margin-left: 8%;
+  }
+}
+
+@media(max-width:900px) {
+
+  .footer__quote-block {
+    display: none;
+  }
+
+  .footer__logo-block {
+    margin-top: 5px;
+  }
+
+  .footer__container {
+    justify-content: space-between;
+  }
+}
+
+@media(max-width:767px) {
+  .footer__container {
+    display: none;
+  }
+
+  .footer__container-320 {
+    padding: 0;
+    display: block;
+  }
+
+  .footer__social-text-320 {
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137%;
+    color: #cacaca;
+    width: 100%;
+    min-width: 161px;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .footer__social-block-320 {
+    background-color: #202020;
+    padding: 31px 80px;
+  }
+
+  .footer__social-link-320 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer__social-link-320:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .footer__social-link-320-1 {
+    background-image: url(../img/svg/ok.svg);
+  }
+
+  .footer__social-link-320-2 {
+    background-image: url(../img/svg/vk.svg);
+  }
+
+  .footer__socials-320 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__logo-block-320 {
+    background: #4a4a4a;
+    padding: 14px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer__logo-text-320 {
+    margin: 0;
+    font-family: "TTFirsNeue";
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    color: #e9e9e9;
+  }
+
+  .footer__logo {
+    width: 100%;
+    height: 18px;
+  }
+
+  .footer__social-img-320:hover{
+    filter: invert(71%) sepia(81%) saturate(4818%) hue-rotate(340deg) brightness(102%) contrast(101%);
+  }
+
+  .footer__social-img-320:focus{
+    filter: invert(36%) sepia(12%) saturate(5564%) hue-rotate(345deg) brightness(100%) contrast(82%);
+  }
+
+  .footer__social-img-320:active{
+    filter: invert(35%) sepia(100%) saturate(5193%) hue-rotate(17deg) brightness(96%) contrast(94%);
+  }
+}

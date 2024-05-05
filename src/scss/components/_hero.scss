@@ -1,0 +1,242 @@
+.hero-section__wrap-container {
+  padding-top: 41px;
+  padding-bottom: 68px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.hero-section__announcements-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 100%;
+  padding: 15px 15px 60px 60px;
+  color: #fff;
+  background-image: url(../img/hero__img-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section__master {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 123px;
+  background-color: #202020;
+}
+
+.hero-section__master-link {
+  padding: 7px 14px 7px 14px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-section__content-text {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+
+.hero-section__content-title {
+  margin-top: 3px;
+  margin-bottom: 18px;
+  max-width: 427px;
+  font-family: 'TTFirsNeue';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 104%;
+  color: #fff;
+}
+
+.hero-section__content-btn {
+  font-family: 'Roboto';
+  padding: 15px 22px;
+  background: #ff6e30;
+  color: #fff;
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.hero-section__submain-title {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-family: 'TTFirsNeue';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 104%;
+  color: #202020;
+}
+
+.hero-section__past-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.hero-section__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-section__past-card {
+  position: relative;
+  overflow: hidden;
+  background-color: darkcyan;
+}
+
+.hero-section__past-card::before {
+  content: "";
+  display: block;
+}
+
+.hero-section__past-card:not(.hero-section__past-card--big)::before {
+  padding-top: 85.667%;
+}
+
+.hero-section__past-card--big {
+  grid-column: span 2;
+}
+
+
+.hero-section__past-card--big::before {
+  padding-top: calc(300 / 630 * 100%);
+}
+
+@media(max-width:1650px) {
+
+  .hero-section__announcements-card {
+    padding: 15px 15px 30px 30px;
+    background-image: url(../img/hero__img-main__1024.png);
+  }
+
+  .hero-section__wrap-container {
+    padding-top: 34px;
+  }
+
+  .hero-section__content-title {
+    margin-bottom: 22px;
+    margin-top: 11px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 100%;
+  }
+
+  .hero-section__submain-title {
+    margin-bottom: 25px;
+  }
+
+  .hero-section__past-card--big::before {
+    padding-top: calc(332 / 466 * 100%);
+  }
+}
+
+
+@media(max-width: 900px) {
+
+  .hero-section__announcements-card {
+    padding: 15px 15px 30px 30px;
+    background-image: url(../img/hero__img-main__768.png);
+  }
+
+  .hero-section__content-title {
+    margin-top: 9px;
+    margin-bottom: 17px;
+  }
+
+  .hero-section__submain-title {
+    margin-bottom: 17px;
+    font-family: "TTFirsNeue";
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 104%;
+    color: #202020;
+  }
+
+  .hero__main-master {
+    top: 18px;
+  }
+
+  .hero-section__past-card--big::before {
+    padding-top: calc(228 / 342 * 100%);
+  }
+}
+
+@media(max-width:767px) {
+
+  .hero-section__wrap-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .hero-section__announcements-card {
+    padding: 6px 5px 30px 30px;
+    background-image: url(../img/hero__img-main__320.png);
+    min-height: 422px;
+  }
+
+  .hero-section__master {
+    width: 95px;
+    top: 6px;
+    right: 5px;
+  }
+
+  .hero-section__master-link {
+    padding: 4px 7px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .hero-section__content-text {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .hero-section__content-title {
+    max-width: 169px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 110%;
+  }
+
+  .hero-section__content-btn {
+    padding: 12px 22px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .hero-section__submain-title {
+    margin-top: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 104%;
+  }
+
+  .hero-section__past-card--big::before {
+    padding-top: calc(186 / 278 * 100%);
+  }
+}
